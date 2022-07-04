@@ -1,0 +1,134 @@
+body {
+   background: url(https://wide-w.com/wp-content/uploads/2018/10/zvezdnye-vojny-probuzhdenija-sily.jpg) 0 0/cover no-repeat;
+   width: 100%;
+   height: 100%;
+}
+.wrapper {
+   max-width: 1400px;
+   margin: 0 auto;
+}
+
+.wrapper__button {
+   display: flex;
+   margin-bottom: 20px;
+}
+.form {
+   display: inline-block;
+}
+.block {
+   flex: 50%;
+}
+.content {
+   display: flex;
+   gap: 25px;
+   flex-wrap: wrap;
+   justify-content: center;
+   transition: all 0.2s;
+}
+.characters {
+   font-size: 25px;
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;
+   gap: 5px;
+   position: relative;
+}
+.style__characters {
+   border: 2px solid rgb(36, 244, 4);
+   background: #2196f3;
+   transition: all 0.2s linear;
+}
+.characters__info{
+   text-align: left;
+   margin: 5px;
+   padding: 5px;
+   width: 220px;
+   cursor: pointer;
+   font-family: 'Dancing Script', cursive;
+   font-size: 22px;
+}
+.characters__info:hover {
+   background: rgb(10, 173, 255);
+}
+.button{
+   margin: 0 auto;
+   padding: 10px 40px;
+   transition: all 0.2s linear;
+   font-size: 24px;
+   font-family: 'Permanent Marker', cursive;
+}
+.button:hover {
+   background: rgb(10, 173, 255);
+   transform: scale(1.05);
+}
+.button__planets {
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+.planets__button {
+   flex: 1 0 100%;
+   margin-bottom: 10px;
+}
+.planets__info {
+   color: rgb(12, 255, 73);
+   font-size: 25px;
+   padding: 20px;
+   border: 3px solid white;
+   border-radius: 10px;
+   box-shadow: 0px 0px 5px 5px rgb(255, 89, 0);
+   cursor: pointer;
+   transition: all 0.1s;
+   width: 200px;
+   text-align: center;
+   font-weight: 900;
+}
+.planets__info:hover {
+   transform: rotate(-5deg);
+}
+.loader__none {
+   display: none;
+}
+.loader {
+   background: none repeat scroll 0 0 #ffffff;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 9999;
+ }
+ .loader .loader_inner {
+   background-image: url("http://denis-creative.com/wp-content/uploads/2017/10/loader.gif");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-color: #fff;
+   height: 60px;
+   width: 60px;
+   margin-top: -30px;
+   margin-left: -30px;
+   left: 50%;
+   top: 50%;
+   position: absolute;
+ }
+@media (max-width:1064px) {
+   .wrapper__button {
+      flex-direction: column;
+      gap: 30px;
+      align-self: center;
+   }
+   .characters__button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   body {
+      background: url(https://wide-w.com/wp-content/uploads/2018/10/zvezdnye-vojny-probuzhdenija-sily.jpg) 0 0/cover ;
+      width: 100%;
+      height: 100VH;
+   }
+}
